@@ -1,0 +1,249 @@
+/* HEADER */
+
+h1 {
+	font-family: 'Andale Mono', AndaleMono, monospace;
+	font-size: 24px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+	text-align: center;
+	background-color: #A8D8D0; 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 0;
+}
+
+.headertitle {
+	text-align: center;
+	font-family: 'Andale Mono', AndaleMono, monospace;
+	font-size: 18px;
+}
+
+/* INSTRUCTIONS  */
+
+.instructions {
+	margin: 10px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+/* INPUT FORM AREA */
+
+.userinput {
+	border: 2px solid gray;
+	width: 400px; 
+	height: auto;
+	float: left;
+	margin-left: 10px;
+}
+
+.inputtitle {
+	text-align: left;
+	margin-left: 10px;
+	font-family: 'Andale Mono', AndaleMono, monospace;
+	font-size: 15px;
+	margin-top: 20px;
+}
+
+.inputfield {
+  background: none;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-size: 15px;
+  width: 80px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+
+}
+
+.button {
+  background-color: #FDFBBA;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  font-size: 15px;
+  width: 90px;
+  margin: 10px 0 0;
+  font-family: Lato, sans-serif;
+  cursor: pointer;
+}
+
+
+/*  USER INPUT SUMMARY  */
+
+.usersummary {
+	border: 2px solid gray;
+	width: 255px; 
+	height: auto;
+	float: left;
+	margin-left: 10px;
+}
+
+.userinputsummary{
+	margin-left: 10px;
+}
+
+#display{
+	margin-left: 10px;
+}
+
+#form {
+	margin-left: 10px;
+	text-align: left;
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 18px;
+}
+
+
+/*  OUTPUT FIELDS  */
+
+.output {
+	border: 2px solid gray;
+	width: 400px; 
+	height: 380px;
+	float: left;
+	margin-left: 10px;
+	margin-right: 50px;
+}
+
+.outputreport {
+
+	text-align: left;
+	margin-left: 10px;
+	font-family: Calibri, Arial, sans-serif;
+	font-size: 18px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 500;
+	line-height: 26.4px;
+}
+
+#demo {
+	color: blue;
+}
+#demo1 {
+	color: forestgreen;
+}
+#demo2 {
+	color: blue;
+}
+
+#demo3 {
+	color: purple;
+	font-style: bold; 
+	font-size: 20px;
+}
+
+
+/*  GENERATE AND CLEAR  */
+
+.generate {
+	text-align: center;
+	/*padding-left: 5px;
+	padding-right: 5px;*/
+	clear: both;
+}
+
+
+
+/*  Footer */
+
+.main-footer{
+
+	clear: both;
+	background: #A8D8D0;
+	height: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: center;
+	font-family: 'Andale Mono', AndaleMono, monospace;
+	font-size: 12px;
+}
+
+/*MEDIA QUERIES */
+
+
+@media (min-width:320px) { /* smartphones, iPhone, portrait 480x320 phones */ 
+	.userinput,
+	.output {
+		max-width: 100%;
+		left-margin:0px;
+		left-padding:0px;
+	}
+	.usersummary{
+		width: 100%;
+	}
+	.button {
+	  background-color: #FDFBBA;
+	  border: 1px solid black;
+	  border-radius: 5px;
+	  color: black;
+	  font-size: 15px;
+	  width: 100px;
+	  margin: 10px 0 0;
+	  font-family: Lato, sans-serif;
+	  cursor: pointer;
+	  padding: 5px;
+	}
+}
+@media (min-width:481px) { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ 
+	.userinput,
+	.output,
+	.usersummary{
+		width: 100%;
+	}
+}
+@media (min-width:641px) { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ 
+	.userinput,
+	.output,
+	.usersummary{
+		width: 100%;
+	}
+@media (min-width:961px) { /* tablet, landscape iPad, lo-res laptops ands desktops */ 
+	.userinput {
+	border: 2px solid gray;
+	width: 400px; 
+	height: auto;
+	float: left;
+	margin-left: 50px;
+}
+
+	.usersummary {
+	border: 2px solid gray;
+	width: 255px; 
+	height: auto;
+	float: left;
+	margin-left: 10px;
+}
+
+	.output {
+	border: 2px solid gray;
+	width: 400px; 
+	height: 380px;
+	float: left;
+	margin-left: 10px;
+	margin-right: 50px;
+}
+
+	.button {
+	  background-color: #FDFBBA;
+	  border: 1px solid black;
+	  border-radius: 5px;
+	  color: black;
+	  font-size: 15px;
+	  width: 90px;
+	  margin: 10px 0 0;
+	  font-family: Lato, sans-serif;
+	  cursor: pointer;
+	  padding: 2px;
+}
+	
+}
+

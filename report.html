@@ -1,0 +1,93 @@
+	
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Budget App</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<header>
+	<h1>Finance Report Generator</h1>
+</header>
+
+<section class="instructions">
+		<h2 class="headertitle">Instructions</h2>
+		<p>Enter your bills one at a time and hit <strong>Save</strong>, select <strong>Show Input</strong> to see all the values you have entered. <strong>Reset Form</strong> to clear current input. When you are done do the same with the Income and Spending. When you are finished hit <strong>Generate</strong> to create your report! <strong>Start Again</strong> will put you back to a fresh Report. </p>	
+</section>
+
+<section class="userinput"> <!-- This is for user input -->
+		<h2 class="headertitle"> Input your information</h2>
+
+		<form id="form">
+		        <hr size="3"/>
+		       
+		        	<p><strong>Monthly Bills</strong></p>
+		            <label for="bill"></label>eg. Rent/Mortgage: $ <input id="billamount" class="inputfield" type="number" /><br>
+		            <!-- <label for="bill"></label>Rent Insurance: $<input id="billamount" type="number" /><br>
+		            <label for="bill"></label>Car Payment: $<input id="billamount" type="number" /><br>
+		            <label for="bill"></label>Car Insurance: $<input id="billamount" type="number" /><br>
+		            <label for="bill"></label>Rent/Mortgage: $<input id="billamount" type="number" /><br> -->
+		            <p><strong>Monthly Income</strong></p>
+		            <label for="income">Income: $ </label><input id="income" class="inputfield" type="number" /><br>
+
+		            <p><strong>Monthly Spending</strong></p>
+		       		<label for="spending">eg. Clothes: $ </label><input id="spending" class="inputfield" type="number" /><br>
+		       		<!-- <label for="spending">Clothes: $</label><input id="spending" type="number" /><br> -->
+		        <br>
+
+		        	
+        			<!-- User controls  -->
+		            <input type="button" class="button" value="Save" onclick="insert();">
+		            <input type="button" class="button" value="Show Input" onclick="show();"> 
+		            <!-- This is where you generate your report -->
+		            <input type="button" class="button" value="Generate" onclick="sumArray(), myFunction();"> <br>
+		            <!-- Reset the fields here -->
+		      		<input type="button" class="button" name="reset_form" value="Reset Form" onclick="this.form.reset();">
+		            <input type="button" class="button" value="Start Again" onclick="Reload();">
+		</form> 	
+					 
+
+</section>
+
+<section class="usersummary">   <!-- This shows what you have entered -->
+		<h2 class="headertitle"> Your Input </h2>
+
+		<div id="display">
+
+        </div>
+</section>
+
+<section class="output">   <!-- This is for the output -->
+		<h2 class="headertitle"> Generated Report </h2>
+		<div id="generate">
+
+        </div>
+
+		<div class="outputreport">
+		<div id="display">
+
+        </div>
+
+		<p> Your Income was $<span id="demo1"></span> </p>
+		<p> Your Monthly Bills add up to: $<span id="demo"></span> </p>
+		<p> You Spent $<span id="demo2"> </p>
+		<!-- <p>Based on your income, you should save approximately $<span id="demo4"> </p> -->
+		<div>
+		<p id="demo3"></p>
+		</div>
+		<div>
+	    <p id="demo4"></p>
+		</div>
+
+</section>
+
+
+ <script type="text/javascript" src="js/reportapp.js"></script>
+</body>
+
+<footer class="main-footer">
+		<span>&copy;2016 Helen King</span>
+</footer>
+</html>
